@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "karma": "karma start karma.conf.js",
-    "test": "nyc mocha",
-    "snyk": "snyk test",
+    "test": "snyk test && nyc mocha",
     "lint": "eslint .",
     "fix": "eslint . --fix",
     "posttest": "nyc check-coverage",
@@ -101,6 +100,7 @@
     "phantomjs-prebuilt": "^2.1.4",
     "sinon": "^7.5.0",
     "standard": "^11.0.0",
+    "snyk": "^1.134.2",
     "watchify": "^3.7.0"
   }
 }
